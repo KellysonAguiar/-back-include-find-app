@@ -4,6 +4,12 @@
 generator client {
   provider = "prisma-client-js"
 }
+model User {
+  id   Int    @id @default(autoincrement())
+  nome String
+
+  @@map("users")
+}
 
 datasource db {
   provider = "postgresql"
