@@ -1,3 +1,4 @@
+//importações necessárias para o projeto
 const express = require("express");
 const { PrismaClient } = require("@prisma/client");
 const bodyParser = require("body-parser");
@@ -33,4 +34,4 @@ app.get("/user/:nome", async (req, res) => {
 // Inicie o servidor na porta especificada
 app.listen(port, () => {
   console.log(`Servidor Express rodando na porta ${port}`);
-});//edit
+});
