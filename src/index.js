@@ -35,7 +35,7 @@ app.get("/user/:name", async (req, res) => {
   const name = req.params.name;
   const user = await prisma.user.findMany({
     where: {
-      name: name,
+      nome: name,
     },
   });
   if (user.length > 0) return res.status(200).send(user);
